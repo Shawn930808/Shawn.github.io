@@ -17,7 +17,7 @@
   <meta name="description" content="">
   <meta name="author" content="John Doe">
   <meta name="keywords" content="">
-  <title>Use hexo build Blog in the github - Hexo</title>
+  <title>使用hexo在Github上部署自己的个人网站 - Hexo</title>
 
   <link  rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/4.4.1/css/bootstrap.min.css" />
 
@@ -127,6 +127,18 @@
             </li>
           
         
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/links/">
+                <i class="iconfont icon-link-fill"></i>
+                Links
+              </a>
+            </li>
+          
+        
         
           <li class="nav-item" id="search-btn">
             <a class="nav-link" data-toggle="modal" data-target="#modalSearch">&nbsp;&nbsp;<i
@@ -152,7 +164,7 @@
               
   <div class="mt-3 post-meta">
     <i class="iconfont icon-date-fill" aria-hidden="true"></i>
-    <time datetime="2020-06-14 15:30">
+    <time datetime="2020-06-14 20:00">
       June 14, 2020 pm
     </time>
   </div>
@@ -180,6 +192,14 @@
 
   
   
+    
+      <!-- 不蒜子统计文章PV -->
+      <span id="busuanzi_container_page_pv" style="display: none">
+        <i class="iconfont icon-eye" aria-hidden="true"></i>
+        <span id="busuanzi_value_page_pv"></span> 次
+      </span>
+    
+  
 </div>
 
             
@@ -205,7 +225,7 @@
             
               <p class="note note-info">
                 
-                  本文最后更新于：6 hours ago
+                  本文最后更新于：a few seconds ago
                 
               </p>
             
@@ -298,6 +318,15 @@ $ git<span class="hljs-built_in"> config </span>--global user.email you email</c
             <div>
               <div class="post-metas mb-3">
                 
+                
+                  <div class="post-meta">
+                    <i class="iconfont icon-tags"></i>
+                    
+                      <a class="hover-with-bg" href="/tags/Hexo/">Hexo</a>
+                    
+                      <a class="hover-with-bg" href="/tags/Github/">Github</a>
+                    
+                  </div>
                 
               </div>
               
@@ -401,7 +430,7 @@ $ git<span class="hljs-built_in"> config </span>--global user.email you email</c
       order: 'random',
       theme: '#b7daff',
       preload: 'none',
-      audio: [{"name":"name","artist":"artist","url":"/songs/test.mp3","cover":"/img/cover.jpg"},{"name":"name","artist":"artist","url":"https://...url.mp3","cover":"https://...cover.jpg"}]
+      audio: [{"name":"所念皆星河","artist":"artist","url":"https://music.163.com/song?id=1384026889&userid=1736399458","cover":"/img/music1.jpg"},{"name":"name","artist":"artist","url":"https://...url.mp3","cover":"https://...cover.jpg"}]
     });
   }
 </script>
@@ -528,7 +557,7 @@ $ git<span class="hljs-built_in"> config </span>--global user.email you email</c
     var typed = new Typed('#subtitle', {
       strings: [
         '  ',
-        "Use hexo build Blog in the github&nbsp;",
+        "使用hexo在Github上部署自己的个人网站&nbsp;",
       ],
       cursorChar: "_",
       typeSpeed: 70,
@@ -590,48 +619,29 @@ $ git<span class="hljs-built_in"> config </span>--global user.email you email</c
 
 
 
-  
-
-  
-    <!-- MathJax -->
-    <script>
-      MathJax = {
-        tex: {
-          inlineMath: [['$', '$'], ['\\(', '\\)']]
-        },
-        options: {
-          renderActions: {
-            findScript: [10, doc => {
-              document.querySelectorAll('script[type^="math/tex"]').forEach(node => {
-                const display = !!node.type.match(/; *mode=display/);
-                const math = new doc.options.MathItem(node.textContent, doc.inputJax[0], display);
-                const text = document.createTextNode('');
-                node.parentNode.replaceChild(text, node);
-                math.start = { node: text, delim: '', n: 0 };
-                math.end = { node: text, delim: '', n: 0 };
-                doc.math.push(math);
-              });
-            }, '', false],
-            insertedScript: [200, () => {
-              document.querySelectorAll('mjx-container').forEach(node => {
-                let target = node.parentNode;
-                if (target.nodeName.toLowerCase() === 'li') {
-                  target.parentNode.classList.add('has-jax');
-                }
-              });
-            }, '', false]
-          }
-        }
-      };
-    </script>
-
-    <script async src="https://cdn.staticfile.org/mathjax/3.0.5/es5/tex-svg.js" ></script>
-
-  
 
 
 
 
+  <script>(function (i, s, o, g, r, a, m) {
+      i['DaoVoiceObject'] = r;
+      i[r] = i[r] ||
+        function () {
+          (i[r].q = i[r].q || []).push(arguments);
+        };
+      i[r].l = 1 * new Date();
+      a = s.createElement(o);
+      m = s.getElementsByTagName(o)[0];
+      a.async = 1;
+      a.src = g;
+      a.charset = 'utf-8';
+      m.parentNode.insertBefore(a, m);
+    })(window, document, 'script', ('https:' === document.location.protocol ? 'https:' : 'http:') + "//widget.daovoice.io/widget/98a540a1.js", 'daovoice');
+    daovoice('init', {
+      app_id: "98a540a1",
+    });
+    daovoice('update');
+  </script>
 
 
 
