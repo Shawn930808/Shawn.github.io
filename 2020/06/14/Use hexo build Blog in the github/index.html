@@ -207,41 +207,41 @@
               <h1 id="1-安装Homebrew"><a href="#1-安装Homebrew" class="headerlink" title="1. 安装Homebrew"></a>1. 安装Homebrew</h1><ul>
 <li>1.安装</li>
 </ul>
-<pre><code class="hljs powershell"><span class="hljs-variable">$</span> /bin/zsh <span class="hljs-literal">-c</span> <span class="hljs-string">"<span class="hljs-variable">$</span>(curl -fsSL https://gitee.com/cunkai/HomebrewCN/raw/master/Homebrew.sh)"</span></code></pre>
+<div class="hljs"><pre><code class="hljs powershell"><span class="hljs-variable">$</span> /bin/zsh <span class="hljs-literal">-c</span> <span class="hljs-string">"<span class="hljs-variable">$</span>(curl -fsSL https://gitee.com/cunkai/HomebrewCN/raw/master/Homebrew.sh)"</span></code></pre></div>
 
 <ul>
 <li><p>2.测试</p>
-<pre><code class="hljs armasm">$ <span class="hljs-keyword">brew </span>ls   本地软件库
-$ <span class="hljs-keyword">brew </span>-v   查看<span class="hljs-keyword">brew版本</span></code></pre>
+<div class="hljs"><pre><code class="hljs armasm">$ <span class="hljs-keyword">brew </span>ls   本地软件库
+$ <span class="hljs-keyword">brew </span>-v   查看<span class="hljs-keyword">brew版本</span></code></pre></div>
 <h1 id="2-安装Git"><a href="#2-安装Git" class="headerlink" title="2. 安装Git"></a>2. 安装Git</h1></li>
 <li><p>1.安装</p>
-<pre><code class="hljs mipsasm">$ <span class="hljs-keyword">brew </span><span class="hljs-keyword">install </span>git</code></pre></li>
+<div class="hljs"><pre><code class="hljs mipsasm">$ <span class="hljs-keyword">brew </span><span class="hljs-keyword">install </span>git</code></pre></div></li>
 <li><p>2.测试</p>
-<pre><code class="hljs applescript">$ git <span class="hljs-built_in">version</span></code></pre>
+<div class="hljs"><pre><code class="hljs applescript">$ git <span class="hljs-built_in">version</span></code></pre></div>
 <h1 id="3-安装-Node-js"><a href="#3-安装-Node-js" class="headerlink" title="3. 安装 Node.js"></a>3. 安装 Node.js</h1></li>
 <li><p>1.安装</p>
-<pre><code class="hljs crmsh">$ brew install <span class="hljs-keyword">node</span><span class="hljs-title"></span></code></pre></li>
+<div class="hljs"><pre><code class="hljs crmsh">$ brew install <span class="hljs-keyword">node</span><span class="hljs-title"></span></code></pre></div></li>
 <li><p>2.测试</p>
-<pre><code class="hljs crmsh">$ <span class="hljs-keyword">node</span> <span class="hljs-title">-v</span>
-$ npm -v</code></pre></li>
+<div class="hljs"><pre><code class="hljs crmsh">$ <span class="hljs-keyword">node</span> <span class="hljs-title">-v</span>
+$ npm -v</code></pre></div></li>
 <li><p>3.更新</p>
-<pre><code class="hljs crmsh">//单独运行
+<div class="hljs"><pre><code class="hljs crmsh">//单独运行
 $ brew update
 $ brew upgrade <span class="hljs-keyword">node</span><span class="hljs-title"></span>
 <span class="hljs-title">$</span> npm install -g npm
 //一条运行
-$ brew update &amp;&amp; brew upgrade <span class="hljs-keyword">node</span> <span class="hljs-title">&amp;&amp; npm</span> install -g npm</code></pre>
+$ brew update &amp;&amp; brew upgrade <span class="hljs-keyword">node</span> <span class="hljs-title">&amp;&amp; npm</span> install -g npm</code></pre></div>
 <h1 id="4-安装-hexo"><a href="#4-安装-hexo" class="headerlink" title="4. 安装 hexo"></a>4. 安装 hexo</h1></li>
 <li><p>1.安装</p>
-<pre><code class="hljs avrasm">$ npm install -g hexo-<span class="hljs-keyword">cli</span></code></pre>
-<h6 id="初始化：本地建一个文件夹Hexo，cd命令进入目录，执行以下命令"><a href="#初始化：本地建一个文件夹Hexo，cd命令进入目录，执行以下命令" class="headerlink" title="初始化：本地建一个文件夹Hexo，cd命令进入目录，执行以下命令"></a>初始化：本地建一个文件夹Hexo，cd命令进入目录，执行以下命令</h6><pre><code class="hljs elixir"><span class="hljs-variable">$ </span>hexo init
-<span class="hljs-variable">$ </span>npm install</code></pre></li>
+<div class="hljs"><pre><code class="hljs avrasm">$ npm install -g hexo-<span class="hljs-keyword">cli</span></code></pre></div>
+<h6 id="初始化：本地建一个文件夹Hexo，cd命令进入目录，执行以下命令"><a href="#初始化：本地建一个文件夹Hexo，cd命令进入目录，执行以下命令" class="headerlink" title="初始化：本地建一个文件夹Hexo，cd命令进入目录，执行以下命令"></a>初始化：本地建一个文件夹Hexo，cd命令进入目录，执行以下命令</h6><div class="hljs"><pre><code class="hljs elixir"><span class="hljs-variable">$ </span>hexo init
+<span class="hljs-variable">$ </span>npm install</code></pre></div></li>
 <li><p>2.本地启动</p>
-<pre><code class="hljs elixir"><span class="hljs-variable">$ </span>hexo g
-<span class="hljs-variable">$ </span>hexo s</code></pre>
+<div class="hljs"><pre><code class="hljs elixir"><span class="hljs-variable">$ </span>hexo g
+<span class="hljs-variable">$ </span>hexo s</code></pre></div>
 </li>
 <li><p>3.修改主题<br>将主题clone到themes文件夹，打开hexo的主目录下的_config.yml文件，找到theme，将值改为主题的名字：</p>
-<pre><code class="hljs autoit">theme: <span class="hljs-keyword">next</span></code></pre>
+<div class="hljs"><pre><code class="hljs autoit">theme: <span class="hljs-keyword">next</span></code></pre></div>
 <h1 id="4-注册Github，并新建一个仓库（repository）"><a href="#4-注册Github，并新建一个仓库（repository）" class="headerlink" title="4. 注册Github，并新建一个仓库（repository）"></a>4. 注册Github，并新建一个仓库（repository）</h1></li>
 <li><p>创建repository：注意名字必须跟前面自己的用户名相同</p>
 </li>
@@ -249,7 +249,7 @@ $ brew update &amp;&amp; brew upgrade <span class="hljs-keyword">node</span> <sp
 <p><img src="https://img-blog.csdnimg.cn/20200614152847592.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl8zNTYyNzAzMw==,size_16,color_FFFFFF,t_70#pic_center" srcset="/img/loading.gif" alt="在这里插入图片描述"></p>
 <h1 id="5-配置SSH"><a href="#5-配置SSH" class="headerlink" title="5. 配置SSH"></a>5. 配置SSH</h1><ul>
 <li><ol>
-<li>生成一个SSH：通过以下命令生成一个ssh_key.pub<br><img src="https://img-blog.csdnimg.cn/20200614152816825.png#pic_center" srcset="/img/loading.gif" alt="在这里插入图片描述"><pre><code class="hljs elixir"><span class="hljs-variable">$ </span>ssh-keygen -t rsa -C 你的邮箱</code></pre>
+<li>生成一个SSH：通过以下命令生成一个ssh_key.pub<br><img src="https://img-blog.csdnimg.cn/20200614152816825.png#pic_center" srcset="/img/loading.gif" alt="在这里插入图片描述"><div class="hljs"><pre><code class="hljs elixir"><span class="hljs-variable">$ </span>ssh-keygen -t rsa -C 你的邮箱</code></pre></div>
 </li>
 </ol>
 </li>
@@ -258,33 +258,33 @@ $ brew update &amp;&amp; brew upgrade <span class="hljs-keyword">node</span> <sp
 </ul>
 <h1 id="6-将本地内容部署到Github"><a href="#6-将本地内容部署到Github" class="headerlink" title="6. 将本地内容部署到Github"></a>6. 将本地内容部署到Github</h1><ul>
 <li><p>使用以下命令验证是否与Github链接</p>
-<pre><code class="hljs elixir"><span class="hljs-variable">$ </span>ssh -T git<span class="hljs-variable">@github</span>.com</code></pre>
+<div class="hljs"><pre><code class="hljs elixir"><span class="hljs-variable">$ </span>ssh -T git<span class="hljs-variable">@github</span>.com</code></pre></div>
 </li>
 <li><p>配置账号</p>
-<pre><code class="hljs routeros">$ git<span class="hljs-built_in"> config </span>--global user.name you username
-$ git<span class="hljs-built_in"> config </span>--global user.email you email</code></pre>
+<div class="hljs"><pre><code class="hljs routeros">$ git<span class="hljs-built_in"> config </span>--global user.name you username
+$ git<span class="hljs-built_in"> config </span>--global user.email you email</code></pre></div>
 </li>
 <li><p>安装github部署插件</p>
 </li>
 </ul>
-<pre><code class="hljs sql">$ npm <span class="hljs-keyword">install</span> hexo-deployer-git <span class="hljs-comment">--save</span></code></pre>
+<div class="hljs"><pre><code class="hljs sql">$ npm <span class="hljs-keyword">install</span> hexo-deployer-git <span class="hljs-comment">--save</span></code></pre></div>
 
 <ul>
 <li>打开_config.yml文件，在最底部修改部署配置，注意严格的空格</li>
 </ul>
-<pre><code class="hljs dts"><span class="hljs-meta"># Deployment</span>
+<div class="hljs"><pre><code class="hljs dts"><span class="hljs-meta"># Deployment</span>
 <span class="hljs-meta">## Docs: https:<span class="hljs-comment">//hexo.io/docs/deployment.html</span></span>
 <span class="hljs-symbol">deploy:</span>
 <span class="hljs-symbol">  type:</span> git
 <span class="hljs-symbol">  repository:</span> http:<span class="hljs-comment">//github.com/Shawn930808/Shawn930808.github.io.git</span>
-<span class="hljs-symbol">  branch:</span> master</code></pre>
+<span class="hljs-symbol">  branch:</span> master</code></pre></div>
 
 <ul>
 <li>保存后在终端执行以下命令</li>
 </ul>
-<pre><code class="hljs elixir"><span class="hljs-variable">$ </span>hexo clean
+<div class="hljs"><pre><code class="hljs elixir"><span class="hljs-variable">$ </span>hexo clean
 <span class="hljs-variable">$ </span>hexo g
-<span class="hljs-variable">$ </span>hexo d</code></pre>
+<span class="hljs-variable">$ </span>hexo d</code></pre></div>
 <p>到此为止，自己的个人网站就成功搭建并部署到Github上了，接下来就可以通过<a href="Shawn930808.github.io">Shawn930808.github.io</a>这个网址访问自己的网站了</p>
 
             </article>
@@ -433,6 +433,26 @@ $ git<span class="hljs-built_in"> config </span>--global user.email you email</c
 
 
     
+  <!-- 备案信息 -->
+  <div class="beian">
+    <a href="http://beian.miit.gov.cn/" target="_blank"
+       rel="nofollow noopener">京ICP证123456号</a>
+    
+      <a
+        href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=12345678"
+        rel="nofollow noopener"
+        class="beian-police"
+        target="_blank"
+      >
+        <span class="beian-police-sep">&nbsp;|&nbsp;</span>
+        
+          <img src="/img/police_beian.png" srcset="/img/loading.gif" alt="police-icon" />
+        
+        <span>京公网安备12345678号</span>
+      </a>
+     
+  </div>
+
 
     
   </div>
@@ -558,66 +578,79 @@ $ git<span class="hljs-built_in"> config </span>--global user.email you email</c
 
 
 
-
+  
 
   
-  
-    <script type="text/javascript">
-      //定义获取词语下标
-      var a_idx = 0;
-      jQuery(document).ready(function ($) {
-        //点击body时触发事件
-        $("body").click(function (e) {
-          //需要显示的词语
-          var a = new Array("富强", "民主", "文明", "和谐", "自由", "平等", "公正", "法治", "爱国", "敬业", "诚信", "友善");
-          //设置词语给span标签
-          var $i = $("<span/>").text(a[a_idx]);
-          //下标等于原来下标+1  余 词语总数
-          a_idx = (a_idx + 1) % a.length;
-          //获取鼠标指针的位置，分别相对于文档的左和右边缘。
-          //获取x和y的指针坐标
-          var x = e.pageX, y = e.pageY;
-          //在鼠标的指针的位置给$i定义的span标签添加css样式
-          $i.css({
-            "z-index": 999,
-            "top": y - 20,
-            "left": x,
-            "position": "absolute",
-            "font-weight": "bold",
-            "color": rand_color()
-          });
-          // 随机颜色
-          function rand_color() {
-            return "rgb(" + ~~(255 * Math.random()) + "," + ~~(255 * Math.random()) + "," + ~~(255 * Math.random()) + ")"
+    <!-- MathJax -->
+    <script>
+      MathJax = {
+        tex: {
+          inlineMath: [['$', '$'], ['\\(', '\\)']]
+        },
+        options: {
+          renderActions: {
+            findScript: [10, doc => {
+              document.querySelectorAll('script[type^="math/tex"]').forEach(node => {
+                const display = !!node.type.match(/; *mode=display/);
+                const math = new doc.options.MathItem(node.textContent, doc.inputJax[0], display);
+                const text = document.createTextNode('');
+                node.parentNode.replaceChild(text, node);
+                math.start = { node: text, delim: '', n: 0 };
+                math.end = { node: text, delim: '', n: 0 };
+                doc.math.push(math);
+              });
+            }, '', false],
+            insertedScript: [200, () => {
+              document.querySelectorAll('mjx-container').forEach(node => {
+                let target = node.parentNode;
+                if (target.nodeName.toLowerCase() === 'li') {
+                  target.parentNode.classList.add('has-jax');
+                }
+              });
+            }, '', false]
           }
-          //在body添加这个标签
-          $("body").append($i);
-          //animate() 方法执行 CSS 属性集的自定义动画。
-          //该方法通过CSS样式将元素从一个状态改变为另一个状态。CSS属性值是逐渐改变的，这样就可以创建动画效果。
-          //详情请看http://www.w3school.com.cn/jquery/effect_animate.asp
-          $i.animate({
-            //将原来的位置向上移动180
-            "top": y - 180,
-            "opacity": 0
-            //1500动画的速度
-          }, 1500, function () {
-            //时间到了自动删除
-            $i.remove();
-          });
-        });
-      })
-      ;
+        }
+      };
+    </script>
+
+    <script async src="https://cdn.staticfile.org/mathjax/3.0.5/es5/tex-svg.js" ></script>
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+    <!-- Baidu Analytics -->
+    <script defer>
+      var _hmt = _hmt || [];
+      (function () {
+        var hm = document.createElement("script");
+        hm.src = "https://hm.baidu.com/hm.js?e1167f5e060e1e130bc6989047566451";
+        var s = document.getElementsByTagName("script")[0];
+        s.parentNode.insertBefore(hm, s);
+      })();
     </script>
   
 
+  
 
+  
 
+  
 
+  
 
-
-
-
-
+  
 
 
 
